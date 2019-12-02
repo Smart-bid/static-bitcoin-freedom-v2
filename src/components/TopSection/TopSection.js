@@ -58,7 +58,7 @@ export default class TopSection extends Component {
                                 <div className="video-tittle">
                                     <p>{moment(today).format('dddd, MMMM DD, YYYY')}</p>
                                 </div>
-                                <VideoPlayer link={video}/>
+                                <VideoPlayer link={first_video}/>
                             </div>
                         </div>
                     </div>
