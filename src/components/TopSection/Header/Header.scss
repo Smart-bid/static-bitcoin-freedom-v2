@@ -1,0 +1,15 @@
+.Header {
+    background: linear-gradient(to right, #e6c59b, #ff8100);
+    padding: 13px 15px;
+
+    p {
+        font-size: 38px;
+        color: #39375e;
+        font-weight: 800;
+    }
+    @media (max-width: 803px) {
+        p {
+            text-align: center;
+        }
+    }
+}

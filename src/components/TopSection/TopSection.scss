@@ -1,0 +1,318 @@
+@import './Header/Header.scss';
+@import './Regform/Regform.scss';
+
+.TopSection {
+    width: 100%;
+    background: url("./bg.jpg") no-repeat center top;
+    background-size: cover;
+    color: #fff;
+
+    .logo {
+        padding: 13px;
+        background: linear-gradient(to right, #514dc7, #23214f);
+        height: 100%;
+        img {
+            width: auto;
+        }
+      @media (max-width: 375px) {
+        img {
+          max-width: 270px;
+        }
+      }
+    }
+    header {
+        background: #ffffff;
+        img {
+            max-height: 80px;
+        }
+      @media (max-width: 375px) {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+
+    .video-block {
+        background: url("./bg.jpg") no-repeat center / cover;
+        .video-link {
+            position: relative;
+            .video-tittle {
+                position: absolute;
+                left: 170px;
+                top: 55px;
+                z-index: 999;
+                text-shadow: 1px 1px 3px #000;
+                color: #fff;
+                font-weight: 700;
+                font-size: 18px;
+              @media (max-width: 1200px) {
+                left: 80px;
+              }
+              @media (max-width: 991px) {
+                left: 28px;
+                top: 48px;
+              }
+            }
+        }
+    }
+    .VideoPlayer {
+        height: auto;
+        max-width: 838px;
+        margin: 45px auto;
+    }
+
+    .headline {
+        background: linear-gradient(0.25turn, #23214f, #1e35d8, #23214f) center / cover;
+        text-align: center;
+        .title {
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 42px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 1.4;
+            margin: 0 0 10px;
+            span {
+                color: #facf5f;
+            }
+          @media (max-width: 764px) {
+            font-size: 30px;
+          }
+          @media (max-width: 320px) {
+            font-size: 26px;
+          }
+        }
+    }
+
+    .partners-block {
+        background: linear-gradient(0.25turn, #d1d3d6, #fefefe, #d1d3d6);
+        .img {
+            padding: 10px 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .top-reg {
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+.box_wrap {
+    max-width: 1080px;
+}
+
+.red-btn {
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to bottom, #fc5239, #ef1713, #fc5239);
+    font-size: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    outline: none!important;
+    margin-bottom: 10px;
+    &:hover {
+        background: linear-gradient(to bottom, #ef1713, #fc5239, #ef1713);
+    }
+  @media (max-width: 375px) {
+    font-size: 28px;
+  }
+}
+
+footer {
+    background: linear-gradient(0.25turn, #23214f, #1e35d8, #23214f);
+    p {
+        font-size: 10px;
+        color: #ffffff;
+        padding: 7px 0;
+        margin: 0 0 10px;
+    }
+}
+
+.FirstRegform {
+  position: relative;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background: url("./status.png") no-repeat center / cover;
+    @media (max-width: 600px) {
+      top: 0;
+      left: 0;
+    }
+  }
+  .title {
+    margin-bottom: 25px;
+    p {
+      color: #ef1713;
+      padding-left: 80px;
+      font-size: 25px;
+      font-weight: 900;
+      text-align: center;
+      &:first-child {
+        font-size: 30px;
+      }
+      @media (max-width: 400px) {
+        font-size: 22px!important;
+      }
+    }
+  }
+  .inner {
+    .main-modal-text {
+      margin-bottom: 35px;
+    }
+    p {
+      font-size: 18px;
+      color: #a5a5a5;
+      line-height: 26px;
+      font-weight: 900;
+      text-align: center;
+      span {
+        color: #ef1713;
+      }
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .form-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  input {
+    background-color: #dcdcdc;
+    margin-bottom: 15px;
+    @media (max-width: 400px) {
+      font-size: 14px;
+    }
+  }
+  .red-btn {
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.SecondRegform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .title {
+    margin-bottom: 10px;
+    p {
+      color: #39375e;
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 68px;
+      margin-bottom: 0;
+      text-align: center;
+      @media (max-width: 650px) {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+  }
+  .inner {
+    p {
+      text-align: center;
+    }
+    @media(max-width: 520px) {
+      width: 100%;
+    }
+  }
+  .main-modal-text {
+    padding: 0 60px;
+    margin-bottom: 10px;
+    p {
+      color: #000;
+      font-size: 24px;
+      font-weight: 800;
+      span {
+        color: #ef483b;
+      }
+    }
+    @media (max-width: 650px) {
+      padding: 0;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .Regform {
+    max-width: 520px;
+    margin: auto;
+  }
+  input {
+    margin-bottom: 15px;
+  }
+  .red-btn {
+    margin-bottom: 0;
+  }
+  .popup-img {
+    text-align: center;
+    margin-top: 10px;
+    img {
+      margin: auto;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal-backdrop.show {
+  opacity: .7;
+}
+
+.modal-dialog {
+  max-width: 100%!important;
+  margin: 0!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.second-modal {
+  .modal-content {
+    background-color: #facf5f;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
+
+.first-modal {
+  .modal-content {
+    max-width: 600px;
+    padding: 15px 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    @media (max-width: 400px) {
+      padding: 15px 15px;
+    }
+  }
+}
+
+.modal-content {
+ /* max-width: 600px;*/
+  background-color: transparent;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  border: 0!important;
+}
