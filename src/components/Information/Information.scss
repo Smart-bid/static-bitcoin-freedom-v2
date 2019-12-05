@@ -1,0 +1,21 @@
+.Information {
+  background: url("../TopSection/images/bg3.jpg") no-repeat -115px  center / cover;
+  padding: 58px 0;
+  .title {
+    font-size: 28px;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+  }
+  .description {
+    p {
+      color: #000;
+      font-size: 17px;
+      margin-bottom: 10px!important;
+      text-align: center;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+}

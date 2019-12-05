@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import IntlTelInput from 'react-intl-tel-input'
 import 'react-intl-tel-input/dist/main.css'
-import logo from '../logo.png'
+import logo from '../images/logo.png'
 
 
 export default class Regform extends Component {

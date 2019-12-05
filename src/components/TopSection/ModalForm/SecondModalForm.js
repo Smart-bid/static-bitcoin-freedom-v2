@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Regform from "../Regform/Regform";
-import partners from "../securStripe.png";
+import partners from "../images/securStripe.png";
 
 
 class SecondModalForm extends Component {

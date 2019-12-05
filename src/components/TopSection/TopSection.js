@@ -1,17 +1,21 @@
 import React, {Component} from 'react'
 
 import Header from './Header/Header'
+import Information from '../Information/Information'
+import Participants from '../Participants/Participants'
+import Faq from '../Faq/Faq'
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
+import FirstRegform from './Regform/FirstRegform'
 import Modal from 'react-bootstrap/Modal'
-import ModalForm from './ModalForm/ModalForm'
 import moment from 'moment'
 
 import first_video from './video/first.mp4'
 import second_video from './video/second.mp4'
-import logo from './logo.png'
-import timeLogo from './timeLogoText.jpg'
-import partners from './securStripe.png'
+import logo from './images/logo.png'
+import timeLogo from './images/timeLogoText.jpg'
+import partners from './images/securStripe.png'
 import SecondModalForm from "./ModalForm/SecondModalForm";
+import Regform from "./Regform/Regform";
 
 
 export default class TopSection extends Component {
@@ -52,7 +56,7 @@ export default class TopSection extends Component {
                     </div>
                 </header>
                 <div className="video-block">
-                    <div className="container">
+                    <div className="container box_wrap">
                         <div className="row">
                             <div className="col-12 video-link">
                                 <div className="video-tittle">
@@ -68,13 +72,20 @@ export default class TopSection extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <div className="title">
-                                    <h1><span>{languageManager.title[0]}</span> {languageManager.title[1]}<br/><span className="text-uppercase">{languageManager.title[2]}</span></h1>
-                                    <button className="red-btn" onClick={this.props.handleShow}>{languageManager.button}</button>
+                                    <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
+                                    <Regform { ...this.props }/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <Information {...this.props} />
+
+                <Participants {...this.props} />
+
+                <Faq {...this.props} />
+
                 <div className="partners-block">
                     <div className="container-fluid box_wrap">
                         <div className="row">
