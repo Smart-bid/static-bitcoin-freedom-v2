@@ -50,8 +50,7 @@ class App extends Component {
                                     handleShow={this.handleShow}
                                     handleStep={this.handleStep}
                                     handleSubmit={this.handleSubmit}
-                                    step={this.state.step}
-                                    lastError={this.state.responseError}/>
+                                    step={this.state.step}/>
                     } />
                 </Switch>
 

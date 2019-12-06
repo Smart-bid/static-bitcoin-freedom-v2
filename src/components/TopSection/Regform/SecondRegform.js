@@ -16,22 +16,21 @@ export default class SecondRegform extends Component {
             form: {
                 first_name: '',
                 last_name: '',
-                password: '',
                 email: '',
+                password: '',
                 phone_number: ''
             },
             errors: {},
             responseError: ''
         }
 
-        this.sendData = this.sendData.bind(this)
     }
 
     componentDidMount() {
         if (this.props.location.state) this.setState({form: Object.assign(this.state.form, this.props.location.state.form)})
     }
 
-    sendData() {
+    sendData = () => {
         let form = this.state.form,
         checkParams = this.props.validateParams(form)
         

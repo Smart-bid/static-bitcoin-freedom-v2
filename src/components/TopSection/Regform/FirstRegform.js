@@ -9,14 +9,13 @@ class FirstRegform extends Component {
         this.state = {
             form: {
                 first_name: '',
+                last_name: '',
                 email: ''
             },
             errors: {},
             redirect: false,
             responseError: ''
         }
-
-        this.saveData = this.saveData.bind(this)
     }
 
 
@@ -24,7 +23,7 @@ class FirstRegform extends Component {
         if (this.props.location.state) this.setState({form: Object.assign(this.state.form, this.props.location.state.form), responseError: this.props.location.state.responseError})
     }
 
-    saveData() {
+    saveData = () => {
         let form = this.state.form
         let checkParams = this.props.validateParams(form)
         if (checkParams.success) this.setState({errors: {}}, () => {
@@ -34,45 +33,62 @@ class FirstRegform extends Component {
     }
 
     render() {
-        let languageManager = this.props.languageManager()
-        let step = {
-            className: 'cardb',
+        let languageManager = this.props.languageManager(),
+        stepone = {
             inputs: [
                 {
                     name: 'first_name',
                     type: 'text',
-                    className: 'inputfield',
-                    errorClassName: 'inputError',
-                    groupClassName: 'form_group'
+                    className: 'inputfield small-input inline',
+                    errorClass: 'inputError',
+                    groupClass: 'col-sm-6'
                 },
+                {
+                    name: 'last_name',
+                    type: 'text',
+                    className: 'inputfield small-input inline',
+                    errorClass: 'inputError',
+                    groupClass: 'col-sm-6'
+                }
+            ],
+        },
+        steptwo = {
+            inputs: [
                 {
                     name: 'email',
                     type: 'email',
-                    className: 'inputfield',
-                    errorClassName: 'inputError',
-                    groupClassName: 'form_group'
+                    className: 'inputfield small-input',
+                    errorClass: 'inputError',
+                    groupClass: 'form_group'
                 }
             ],
-            button: {
-                className: 'start',
-                text: languageManager.button
-            },
         }
 
         if (!this.state.redirect) {
             return (
-                <div className="FirstRegform">
+                <div className="FirstRegform Regform">
                     <div className='inner'>
                         <div className='form-wrapper'>
                             <div className="errors">{this.state.responseError}</div>
-
+                            <div className="row">
+                                <Reginputs
+                                    {...stepone}
+                                    form={this.state.form}
+                                    languageManager={languageManager}
+                                    errors={this.state.errors}
+                                    onChange={form => this.setState({form})}
+                                    onFocus={() => {}}/>
+                            </div>
                             <Reginputs
-                                {...step}
+                                {...steptwo}
                                 form={this.state.form}
                                 languageManager={languageManager}
                                 errors={this.state.errors}
-                                onChange={form => this.setState({form})}/>
-                            <button onClick={this.saveData} className='start' >{languageManager.button}</button>
+                                onChange={form => this.setState({form})}
+                                onFocus={() => {}}/>
+                            <div className="btn-block">
+                                <button onClick={this.saveData} className='start' >{languageManager.button}</button>
+                            </div>
                         </div>
                     </div>
                 </div>

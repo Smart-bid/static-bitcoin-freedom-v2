@@ -9,10 +9,10 @@
       "45",
       "İnsan Bitcoin Freedom System'e katıldı"
     ],
-    "fname": "Adınız",
-    "lname": "Soyadınız",
+    "first_name": "Adınız",
+    "last_name": "Soyadınız",
     "email": "E-posta",
-    "pass": "Parola",
+    "password": "Parola",
     "passtest": {
       "invalidlength": "The password must be 8 characters long.",
       "nolowercase": "Must contain at least 1 letter.",
