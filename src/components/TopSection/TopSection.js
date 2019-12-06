@@ -5,7 +5,6 @@ import Information from '../Information/Information'
 import Participants from '../Participants/Participants'
 import Faq from '../Faq/Faq'
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
-import FirstRegform from './Regform/FirstRegform'
 import Modal from 'react-bootstrap/Modal'
 import moment from 'moment'
 
@@ -14,7 +13,6 @@ import second_video from './video/second.mp4'
 import logo from './images/logo.png'
 import timeLogo from './images/timeLogoText.jpg'
 import partners from './images/securStripe.png'
-import SecondModalForm from "./ModalForm/SecondModalForm";
 import Regform from "./Regform/Regform";
 
 
