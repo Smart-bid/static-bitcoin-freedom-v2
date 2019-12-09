@@ -9,6 +9,10 @@
       "45",
       "İnsan Bitcoin Freedom System'e katıldı"
     ],
+    "second_title": [
+      "BAŞLAMAK İÇİN",
+      "AŞAĞIDAKİ FORMU DOLDURUN"
+    ],
     "first_name": "Adınız",
     "last_name": "Soyadınız",
     "email": "E-posta",
@@ -42,7 +46,7 @@
       "Hesabınızı etkinleştirmek için broker gereksinimi olan 250$ yatırın.",
       "Yatırımı tamamladıktan sonra, önerdiğimiz broker hemen hesabınızı yönetmeye başlayacaktır."
     ],
-    "live-score_title": "Aksiyonu İzleyin - CANLI HESAPLAR",
+    "live_score_title": "Aksiyonu İzleyin - CANLI HESAPLAR",
     "participants_title": "İşte Bitcoin Freedom System Üyelerinin paylaşmak istedikleri",
     "participants": [
       {

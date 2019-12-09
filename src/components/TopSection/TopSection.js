@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import Header from './Header/Header'
 import Information from '../Information/Information'
 import Participants from '../Participants/Participants'
+import AnotherParticipants from '../Participants/AnotherParticipants'
 import Faq from '../Faq/Faq'
 import VideoPlayer from './VideoPlayer/VideoPlayer.js'
 import Modal from 'react-bootstrap/Modal'
@@ -30,6 +31,7 @@ export default class TopSection extends Component {
     render() {
         let languageManager = this.props.languageManager();
         const today = new Date();
+        const path = this.props.location.pathname;
 
         return (
             <div className='TopSection'>
@@ -60,7 +62,7 @@ export default class TopSection extends Component {
                                 <div className="video-tittle">
                                     <p>{moment(today).format('dddd, MMMM DD, YYYY')}</p>
                                 </div>
-                                <VideoPlayer link={first_video}/>
+                                <VideoPlayer link={((path === '/') ? first_video : second_video)}/>
                             </div>
                         </div>
                     </div>
@@ -70,7 +72,15 @@ export default class TopSection extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <div className="title">
-                                    <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
+                                    {(path === '/') ? <div className="title-block">
+                                        <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
+                                    </div> :
+                                        <div className="title-block">
+                                            <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
+                                            <p className="second-title">{languageManager.second_title[0]}</p>
+                                            <p className="second-subtitle">{languageManager.second_title[1]}</p>
+                                        </div>
+                                    }
                                     <Regform { ...this.props }/>
                                 </div>
                             </div>
@@ -80,7 +90,7 @@ export default class TopSection extends Component {
 
                 <Information {...this.props} />
 
-                <Participants {...this.props} />
+                {(path === '/') ? <Participants {...this.props} /> : <AnotherParticipants {...this.props} /> }
 
                 <Faq {...this.props} />
 

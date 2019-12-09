@@ -8,6 +8,10 @@
     font-weight: 800;
   }
 
+  .steps {
+    text-align: center;
+  }
+
   .participants-block {
     display: flex;
     align-items: flex-start;
@@ -78,6 +82,41 @@
           color: red;
         }
       }
+    }
+  }
+  .steps-block {
+    padding: 20px;
+    box-shadow: -1px 11px 35px -6px rgba(0,0,0,0.75);
+    min-height: 290px;
+    .number {
+      font-size: 100px;
+      color: #39375e;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+  .steps-block1 {
+    background: #facf5f;
+  }
+  .steps-block2 {
+    background: #f8c05e;
+  }
+  .steps-block3 {
+    background: #f7ac4b;
+  }
+  .steps-descriptions {
+    p {
+      font-size: 16px;
+      color: #000;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .live-score {
+    margin-top: 90px;
+    .title {
+      text-align: center;
     }
   }
 }

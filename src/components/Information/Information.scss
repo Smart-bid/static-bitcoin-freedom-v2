@@ -1,4 +1,4 @@
-.Information {
+.Information, .Second-info {
   background: url("../TopSection/images/bg3.jpg") no-repeat -115px  center / cover;
   padding: 58px 0;
   .title {
@@ -18,4 +18,7 @@
       }
     }
   }
+}
+.Second-info {
+  background: url("../TopSection/images/bg3.jpg") no-repeat 0  center / cover;
 }

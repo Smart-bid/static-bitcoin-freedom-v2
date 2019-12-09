@@ -51,14 +51,14 @@ export default class SecondRegform extends Component {
                     type: 'text',
                     className: 'inputfield small-input inline',
                     errorClass: 'inputError',
-                    groupClass: 'inline'
+                    groupClass: 'col-sm-6'
                 },
                 {
                     name: 'last_name',
                     type: 'text',
                     className: 'inputfield small-input inline',
                     errorClass: 'inputError',
-                    groupClass: 'inline'
+                    groupClass: 'col-sm-6'
                 }
             ],
         },
@@ -84,8 +84,7 @@ export default class SecondRegform extends Component {
 
         if (!this.state.path) { 
             return (
-                <div className="SecondRegform">
-                    {/*<img src={logo} alt="logo" className="logo small"/>*/}
+                <div className="SecondRegform Regform">
                     {
                         (!this.state.loading) ?
                         <div className='inner'>
@@ -109,8 +108,7 @@ export default class SecondRegform extends Component {
                                         languageManager={languageManager}
                                         errors={this.state.errors}
                                         onChange={form => this.setState({form})}/>
-                               
-                               {/* <img src={hint} alt="hint" className="hint"/>*/}
+
 
                                 <FormGroup style={{width: '100%'}}>
                                     <IntlTelInput
@@ -130,8 +128,9 @@ export default class SecondRegform extends Component {
                                     <FormFeedback style={{display: 'block'}}>{this.state.errors['phone_number'].messages[0]}</FormFeedback>}
 
                                 </FormGroup>
-
-                                <button onClick={this.sendData} className='start' >{languageManager.button_last}</button>
+                                <div className="btn-block">
+                                    <button onClick={this.sendData} className='start' >{languageManager.button}</button>
+                                </div>
                             </div>
                     </div> : 
                     (!this.state.fail) ?

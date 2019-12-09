@@ -117,7 +117,10 @@
     }
 
     .selected-flag {
-        width: 15% !important;
+        background: #ffffff!important;
+        width: 18% !important;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
 
         @media (max-width: 1200px) {
             width: 30% !important;
@@ -145,9 +148,10 @@
 
     .intl-tel-input.allow-dropdown.separate-dial-code .selected-dial-code {
         padding-left: 0;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1vw;
-        font-weight: 400;
+        font-size: 19px;
+        font-weight: 800;
+        background: #ffffff;
+        color: #000;
 
         @media (max-width: 1200px) {
             font-size: 1.4vw;
@@ -160,7 +164,7 @@
     }
 
     .intl-tel-input {
-        margin-bottom: 4vw;
+        margin-bottom: 0;
         color: #333;
     }
 
@@ -180,6 +184,7 @@
         font-size: 22px;
         font-weight: 400;
         color: #7e7e7e;
+        height: 58px;
     }
     .start {
         width: 85%;
@@ -196,6 +201,20 @@
             background: linear-gradient(to bottom, #ef1713, #fc5239, #ef1713);
         }
     }
+
+    .intl-tel-input input, .intl-tel-input input[type=tel], .intl-tel-input input[type=text] {
+        width: 100%;
+        height: 58px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #7e7e7e;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        text-align: center;
+        padding-left: 0!important;
+    }
+
 }
 
 .form-control {

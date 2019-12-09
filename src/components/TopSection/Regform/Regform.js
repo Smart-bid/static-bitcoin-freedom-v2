@@ -6,6 +6,7 @@ export default function Regform(props) {
     const path = props.location.pathname
 
     function updateValue(form, value, key) {
+       /* this.props.trackStartEdit();*/
         let obj = {},
             tempForm = form
         obj[key] = value
@@ -14,6 +15,6 @@ export default function Regform(props) {
         return tempForm
     }
 
-    if (path === '/') return <FirstRegForm {...props} updateValue={updateValue} inputs={['first_name', 'last_name', 'email']}/>
+    if (path === '/') return <FirstRegForm {...props} updateValue={updateValue} rowInputs={['first_name', 'last_name']} inputs={['email']}/>
     else return <SecondRegform {...props} updateValue={updateValue} inputs={['email', 'password']} rowInputs={['first_name', 'last_name']}/>
 }
