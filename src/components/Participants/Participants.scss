@@ -120,3 +120,63 @@
     }
   }
 }
+.TradeHistory {
+  color: #000;
+}
+.trade-head-block {
+  .nav-trader-block {
+    padding: 0 15px;
+    width: 100%;
+    .tab-item {
+      padding: 0 10px 0 0;
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+  .img-block img {
+    width: 120px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    margin-bottom: 5px;
+  }
+  .nav-link {
+    padding: 0!important;
+  }
+  .nav-link.active {
+    .img-block img {
+      border-color: #facf5f;
+    }
+  }
+  .name {
+    font-weight: 600;
+    color: #2d2e2f;
+    font-size: 19px;
+    line-height: 1;
+    margin-bottom: 5px!important;
+    white-space: nowrap;
+  }
+  .start {
+    font-size: 15px;
+    color: #000000;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 5px!important; 
+    span {
+      color: #606060;
+    }
+  }
+  .profit {
+    font-size: 11px;
+    color: #000000;
+    line-height: 1;
+    white-space: nowrap;
+    font-weight: 600;
+    span {
+      white-space: nowrap;
+      color: #2bb673;
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+}

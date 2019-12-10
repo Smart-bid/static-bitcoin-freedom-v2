@@ -34,9 +34,8 @@ export default class AnotherParticipants extends Component {
 
     componentDidMount() {
 
-        let history = [TradeHistory(5000), TradeHistory(5000), TradeHistory(5000), TradeHistory(5000)];
+        let history = [TradeHistory(5000), TradeHistory(5000), TradeHistory(5000), TradeHistory(5000), TradeHistory(5000), TradeHistory(5000)];
         this.setState({history});
-        console.log(this.state.history);
     }
 
     render() {
@@ -69,7 +68,7 @@ export default class AnotherParticipants extends Component {
                             </div>
                         </div>
                         <div className="col-12 score-block">
-                            <TradeHistoryComponent data={this.state.history}/>
+                            <TradeHistoryComponent data={this.state.history} {...this.props}/>
                         </div>
                     </div>
                 </div>

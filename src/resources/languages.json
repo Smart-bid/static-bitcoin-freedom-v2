@@ -47,6 +47,104 @@
       "Yatırımı tamamladıktan sonra, önerdiğimiz broker hemen hesabınızı yönetmeye başlayacaktır."
     ],
     "live_score_title": "Aksiyonu İzleyin - CANLI HESAPLAR",
+    "trade_head": [
+      {
+        "img": "yusuf",
+        "name": "Yusuf Yılmaz",
+        "start": [
+          "Başlangıç: ",
+          "$300"
+        ],
+        "end": [
+          "Kar:",
+          "$34.734,00"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 121",
+        "lost": "Kayıp: 29",
+        "last": "Son: 150"
+      },
+      {
+        "img": "berat",
+        "name": "Berat Kaya",
+        "start": [
+          "Başlangıç: ",
+          "$750"
+        ],
+        "end": [
+          "Kar:",
+          "$101.965,79"
+        ],
+        "open": "Açık: 2",
+        "end_trade": "kazanılan: 89",
+        "lost": "Kayıp: 29",
+        "last": "Son: 88"
+      },
+      {
+        "img": "mustafa",
+        "name": "Mustafa Demir",
+        "start": [
+          "Başlangıç: ",
+          "$600"
+        ],
+        "end": [
+          "Kar:",
+          "$113.470,73"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 99",
+        "lost": "Kayıp: 45",
+        "last": "Son: 220"
+      },
+      {
+        "img": "zeynep",
+        "name": "Zeynep Çelik",
+        "start": [
+          "Başlangıç: ",
+          "$450"
+        ],
+        "end": [
+          "Kar:",
+          "$134.209,40"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 200",
+        "lost": "Kayıp: 50",
+        "last": "Son: 400"
+      },
+      {
+        "img": "yagmur",
+        "name": "Yağmur Yıldız",
+        "start": [
+          "Başlangıç: ",
+          "$350"
+        ],
+        "end": [
+          "Kar:",
+          "$103.271,06"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 101",
+        "lost": "Kayıp: 20",
+        "last": "Son: 170"
+      },
+      {
+        "img": "ela",
+        "name": "Ela Aydın",
+        "start": [
+          "Başlangıç: ",
+          "$500"
+        ],
+        "end": [
+          "Kar:",
+          "$52.156,80"
+        ],
+        "open": "Açık: 3",
+        "end_trade": "kazanılan: 121",
+        "lost": "Kayıp: 40",
+        "last": "Son: 250"
+      }
+    ],
     "participants_title": "İşte Bitcoin Freedom System Üyelerinin paylaşmak istedikleri",
     "participants": [
       {
