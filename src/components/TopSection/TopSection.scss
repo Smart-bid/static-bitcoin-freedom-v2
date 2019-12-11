@@ -299,6 +299,9 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100%;
+  @media (max-height: 675px) {
+    height: auto;
+  }
 }
 
 .second-modal {
