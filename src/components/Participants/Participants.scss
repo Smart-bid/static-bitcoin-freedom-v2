@@ -122,6 +122,60 @@
 }
 .TradeHistory {
   color: #000;
+  border: 8px solid #facf5f;
+  padding: 6px;
+  margin-top: 20px;
+  .count {
+    font-size: 24px;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 800;
+    p {
+      color: #000;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .green {
+      color: #1cc700;
+    }
+  }
+  .title {
+    padding: 10px 25px;
+    background-color: #39375e;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    .main p {
+      font-size: 30px;
+      font-weight: 400;
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: url("./images/traider.png") no-repeat left center / contain;
+        width: 24px;
+        height: 100%;
+      }
+    }
+    .date {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 16px;
+        font-weight: 800;
+      }
+    }
+  }
+  .grey-block {
+
+  }
 }
 .trade-head-block {
   .nav-trader-block {
@@ -179,4 +233,32 @@
       line-height: 1;
     }
   }
+}
+table {
+  width: 100%;
+}
+table > tbody > tr > td {
+  border-top: none;
+  padding-left: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #000000;
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 800;
+}
+table > thead > tr > th {
+  border-bottom: none;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  color: #5f5f5f;
+  font-weight: bold;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  vertical-align: middle;
+  text-align: center;
+  height: 38px;
 }

@@ -7,6 +7,8 @@ import mustafa from './images/mp3.png'
 import zeynep from './images/mp4.png'
 import yagmur from './images/mp5.png'
 import ela from './images/mp6.png'
+import traider from './images/traider.png'
+import moment from 'moment'
 
 
 
@@ -30,11 +32,33 @@ export default class TradeHistory extends Component {
     }
 }
 
+const TradeStats = (props) => {
+    let languageManager = props.languageManager();
+    const tabsMumber = props.tabsNumber;
+    return (
+        <>
+            {
+                languageManager.trade_head.filter((item, index) => index === tabsMumber).map((item, index) => {
+                    return (
+                        <div key={index} className="count">
+                            <p>{item.open}</p>
+                            <p className="green">{item.end_trade}</p>
+                            <p>{item.lost}</p>
+                            <p>{item.last}</p>
+                        </div>
+                    )
+                })
+            }
+        </>
+    )
+}
+
 const NewTable = (props) => {
     const data = props.data;
     let nf = new Intl.NumberFormat();
     let images = props.images;
     let languageManager = props.languageManager();
+    const today = new Date();
     return (
         <Tab.Container id="tab-panel" defaultActiveKey="0">
             <div className="trade-head-block">
@@ -73,29 +97,29 @@ const NewTable = (props) => {
                         return (
                             <Tab.Pane key={index} eventKey={index}>
                                 <div className='TradeHistory'>
-                                    <div className="count">
-                                        <div>Won: <span className='win'>{item.wonCount}</span></div>
-                                        <div>Lost: <span className='loss'>{item.lostCount}</span></div>
-                                        <div>Last: <span>{item.trades.length}</span></div>
-                                    </div>
+
+                                    <TradeStats {...props} tabsNumber={index}/>
+
                                     <div className="history">
                                         <div className="title">
                                             <div className="main">
-                                                <div>TRADE HISTORY</div>
+                                                <p>TİCARİ TARİHÇESİ</p>
+                                            </div>
+                                            <div className="date">
+                                                <p>Son güncelleme: <span>{moment(today).format('DD MMMM YYYY')}</span></p>
                                             </div>
                                         </div>
                                         <table>
                                             <thead>
-                                            <tr>
-                                                <th>exprired time</th>
-                                                <th>asset</th>
-                                                <th>position</th>
-                                                <th>investment</th>
-                                                <th>entry rate</th>
-                                                <th>expiration rate</th>
-                                                <th>execution time</th>
-                                                <th>payout</th>
-                                                <th>status</th>
+                                            <tr className="grey-block">
+                                                <th>SONLANDI ZAMANLI</th>
+                                                <th>VARLIK</th>
+                                                <th>YATIRIM</th>
+                                                <th>GİRİŞ ORANI</th>
+                                                <th>SONA ERME ORANI</th>
+                                                <th>UYGULAMA VAKTİ</th>
+                                                <th>ÖDEME</th>
+                                                <th>DURUM</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -104,7 +128,6 @@ const NewTable = (props) => {
                                                     <tr key={entry.date}>
                                                         <td>{entry.date}</td>
                                                         <td>{entry.stock}</td>
-                                                        <td className={entry.position}>{entry.position}</td>
                                                         <td>{entry.inv}</td>
                                                         <td>{nf.format(entry.enrate.toFixed(3))}</td>
                                                         <td>{nf.format(entry.exrate.toFixed(3))}</td>
@@ -128,3 +151,5 @@ const NewTable = (props) => {
         </Tab.Container>
     )
 }
+
+
