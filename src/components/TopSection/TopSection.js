@@ -22,7 +22,6 @@ export default class TopSection extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            showModal: false,
             videos: {
                 first_video,
                 second_video
@@ -30,19 +29,16 @@ export default class TopSection extends Component {
         }
     }
 
-    handleHide = () => this.setState({ showModal: false });
-    handleShow = () => this.setState({ showModal: true });
-
     render() {
         let languageManager = this.props.languageManager();
         const today = new Date();
         const path = this.props.location.pathname;
 
         return (
-            <div className='TopSection' onMouseLeave={this.handleShow}>
+            <div className='TopSection'>
                 {(path === '/') ?
-                    <Modal show={this.state.showModal} onHide={this.handleHide} dialogClassName="second-modal">
-                        <ModalForm {...this.props} onHide={this.handleHide}/>
+                    <Modal show={this.props.show} onHide={this.props.handleHide} dialogClassName="second-modal">
+                        <ModalForm {...this.props} onHide={this.props.handleHide}/>
                     </Modal> :
                     ''}
                 <header>
@@ -69,7 +65,7 @@ export default class TopSection extends Component {
                                 <div className="video-tittle">
                                     <p>{moment(today).format('dddd, MMMM DD, YYYY')}</p>
                                 </div>
-                                <VideoPlayer link={((path === '/') ? first_video : second_video)}/>
+                                <VideoPlayer {...this.props} link={((path === '/') ? first_video : second_video)}/>
                             </div>
                         </div>
                     </div>

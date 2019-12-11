@@ -74,7 +74,7 @@ class FirstRegform extends Component {
                                 <Reginputs
                                     {...stepone}
                                     form={this.state.form}
-                                    trackEdit={this.props.trackStartEdit}
+                                    trackStartEdit={this.props.trackStartEdit}
                                     languageManager={languageManager}
                                     errors={this.state.errors}
                                     onChange={form => this.setState({form})}
@@ -83,7 +83,7 @@ class FirstRegform extends Component {
                             <Reginputs
                                 {...steptwo}
                                 form={this.state.form}
-                                trackEdit={this.props.trackStartEdit}
+                                trackStartEdit={this.props.trackStartEdit}
                                 languageManager={languageManager}
                                 errors={this.state.errors}
                                 onChange={form => this.setState({form})}
