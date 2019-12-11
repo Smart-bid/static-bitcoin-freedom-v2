@@ -88,6 +88,9 @@
     padding: 20px;
     box-shadow: -1px 11px 35px -6px rgba(0,0,0,0.75);
     min-height: 290px;
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
     .number {
       font-size: 100px;
       color: #39375e;
@@ -115,8 +118,16 @@
 
   .live-score {
     margin-top: 90px;
+    @media (max-width: 864px) {
+      display: none;
+    }
     .title {
       text-align: center;
+    }
+  }
+  .score-block {
+    @media (max-width: 864px) {
+      display: none;
     }
   }
 }

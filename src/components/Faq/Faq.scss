@@ -1,6 +1,9 @@
 .Faq {
   margin-top: 80px;
   background: url("./bg4.jpg") no-repeat center right / cover;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
   .title {
     p {
       text-align: center;
@@ -27,6 +30,9 @@
       background: #ffffff;
       font-weight: 700;
       font-size: 14px;
+      @media (max-width: 440px) {
+        padding: 20px 55px 20px 20px;
+      }
       .arrow-block {
         position: absolute;
         right: 0;

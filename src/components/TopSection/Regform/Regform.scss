@@ -200,6 +200,9 @@
         &:hover {
             background: linear-gradient(to bottom, #ef1713, #fc5239, #ef1713);
         }
+        @media (max-width: 550px) {
+            font-size: 35px;
+        }
     }
 
     .intl-tel-input input, .intl-tel-input input[type=tel], .intl-tel-input input[type=text] {
@@ -213,6 +216,9 @@
         border: none;
         text-align: center;
         padding-left: 0!important;
+        @media (max-width: 670px) {
+            padding-left: 120px!important;
+        }
     }
 
 }

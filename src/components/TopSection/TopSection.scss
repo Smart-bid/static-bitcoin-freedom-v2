@@ -57,8 +57,11 @@
           left: 80px;
         }
         @media (max-width: 991px) {
-          left: 28px;
-          top: 48px;
+          left: 40px;
+          top: 65px;
+        }
+        @media (max-width: 350px) {
+          font-size: 16px;
         }
       }
     }
@@ -69,6 +72,15 @@
     max-width: 838px;
     margin: 45px auto;
     border: 20px solid #39375e;
+    @media (max-width: 991px) {
+      height: 407px;
+    }
+    @media (max-width: 767px) {
+      height: 304px;
+    }
+    @media (max-width: 500px) {
+      height: auto;
+    }
   }
 
   .headline {
@@ -104,12 +116,21 @@
       text-transform: uppercase;
       font-size: 64px;
       font-weight: 900;
+      @media (max-width: 760px) {
+        font-size: 45px;
+      }
+      @media (max-width: 390px) {
+        font-size: 35px;
+      }
     }
     .second-subtitle {
       color: white;
       font-size: 48px;
       text-transform: uppercase;
       font-weight: 900;
+      @media (max-width: 760px) {
+        font-size: 30px;
+      }
     }
   }
 
