@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import Header from './Header/Header'
+import ModalForm from './ModalForm/ModalForm'
 import Information from '../Information/Information'
 import Participants from '../Participants/Participants'
 import AnotherParticipants from '../Participants/AnotherParticipants'
@@ -21,6 +22,7 @@ export default class TopSection extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            showModal: false,
             videos: {
                 first_video,
                 second_video
@@ -28,16 +30,21 @@ export default class TopSection extends Component {
         }
     }
 
+    handleHide = () => this.setState({ showModal: false });
+    handleShow = () => this.setState({ showModal: true });
+
     render() {
         let languageManager = this.props.languageManager();
         const today = new Date();
         const path = this.props.location.pathname;
 
         return (
-            <div className='TopSection'>
-                {/*<Modal show={this.props.showSecondModal} onHide={this.props.secondModalHide} dialogClassName="second-modal">
-                    <SecondModalForm {...this.props}/>
-                </Modal>*/}
+            <div className='TopSection' onMouseLeave={this.handleShow}>
+                {(path === '/') ?
+                    <Modal show={this.state.showModal} onHide={this.handleHide} dialogClassName="second-modal">
+                        <ModalForm {...this.props} onHide={this.handleHide}/>
+                    </Modal> :
+                    ''}
                 <header>
                     <div className="container-fluid">
                         <div className="row">

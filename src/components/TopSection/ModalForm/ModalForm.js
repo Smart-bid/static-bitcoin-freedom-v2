@@ -3,7 +3,7 @@ import Regform from "../Regform/Regform";
 import partners from "../images/securStripe.png";
 
 
-class SecondModalForm extends Component {
+class ModalForm extends Component {
 
     render() {
 
@@ -20,13 +20,14 @@ class SecondModalForm extends Component {
                         <p>{languageManager.modal_description[0]}<span>{languageManager.modal_description[1]}</span><br/>{languageManager.modal_description[2]}</p>
                     </div>
                    <Regform {...this.props} />
-                   <p>{languageManager.modal_small_text}</p>
+                   <p className="small-text">{languageManager.modal_small_text}</p>
                     <div className="popup-img">
                         <img src={partners} alt={partners}/>
                     </div>
                 </div>
+                <div className="close" onClick={this.props.onHide}></div>
             </div>
         )
     }
 }
-export default (SecondModalForm);
+export default (ModalForm);

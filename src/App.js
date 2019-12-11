@@ -16,9 +16,6 @@ class App extends Component {
         };
     }
 
-    handleHide = () => this.setState({ showModal: false });
-    handleShow = () => this.setState({ showModal: true });
-
     handleStep = (step) => {
         this.setState({step})
     };

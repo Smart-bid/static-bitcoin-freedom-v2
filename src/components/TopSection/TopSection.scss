@@ -194,6 +194,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
 
   .title {
     margin-bottom: 10px;
@@ -201,7 +202,7 @@ footer {
     p {
       color: #39375e;
       font-weight: 900;
-      font-size: 54px;
+      font-size: 60px;
       line-height: 68px;
       margin-bottom: 0;
       text-align: center;
@@ -210,6 +211,9 @@ footer {
         line-height: 45px;
       }
     }
+  }
+  .small-text {
+    margin-top: 30px;
   }
 
   .inner {
@@ -223,7 +227,6 @@ footer {
   }
 
   .main-modal-text {
-    padding: 0 60px;
     margin-bottom: 10px;
 
     p {
@@ -245,7 +248,7 @@ footer {
   }
 
   .Regform {
-    max-width: 520px;
+    max-width: 100%;
     margin: auto;
   }
 
@@ -266,6 +269,21 @@ footer {
       @media (max-width: 1000px) {
         width: 100%;
       }
+    }
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("./images/close.png") no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s ease;
+    &:hover {
+      opacity: 1!important;
     }
   }
 }
