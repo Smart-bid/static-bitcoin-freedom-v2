@@ -23,10 +23,6 @@ class App extends Component {
         this.setState({step})
     };
 
-    handleSubmit = () => {
-        this.props.handleSubmit()
-            .then(res => (res.redirectUrl) ? window.location = res.redirectUrl : this.setState({responseError: res.error}, this.handleStep(this.props.step + 1)))
-    };
 
     render() {
 
@@ -39,7 +35,6 @@ class App extends Component {
                                     handleHide={this.handleHide}
                                     handleShow={this.handleShow}
                                     handleStep={this.handleStep}
-                                    handleSubmit={this.handleSubmit}
                                     step={this.state.step}
                                     lastError={this.state.responseError}/>
                     } />
@@ -49,8 +44,8 @@ class App extends Component {
                                     handleHide={this.handleHide}
                                     handleShow={this.handleShow}
                                     handleStep={this.handleStep}
-                                    handleSubmit={this.handleSubmit}
-                                    step={this.state.step}/>
+                                    step={this.state.step}
+                                    lastError={this.state.responseError}/>
                     } />
                 </Switch>
 

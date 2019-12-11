@@ -133,7 +133,7 @@ const NewTable = (props) => {
                                                         <td>{nf.format(entry.exrate.toFixed(3))}</td>
                                                         <td>{entry.extime}</td>
                                                         <td>{nf.format(entry.pay.toFixed(3))}</td>
-                                                        <td className={entry.status}><div>{entry.status}</div></td>
+                                                        <td><div className={entry.status.toLowerCase()}>{entry.status}</div></td>
                                                     </tr>
                                                 )
                                             })}

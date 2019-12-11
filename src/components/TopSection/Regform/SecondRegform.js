@@ -20,8 +20,7 @@ export default class SecondRegform extends Component {
                 password: '',
                 phone_number: ''
             },
-            errors: {},
-            responseError: ''
+            errors: {}
         }
 
     }
@@ -136,7 +135,7 @@ export default class SecondRegform extends Component {
                     (!this.state.fail) ?
                         <img src={logo} alt="loading" className="loading"/> :
                         <div>
-                            <div className="errors">{this.state.responseError}</div>
+                            <div className="errors">{this.state.redirectUrl}</div>
                             <Link to={{ pathname: this.state.path, search: this.props.location.search, state: this.state}}><button className='start' >OK</button></Link>
                         </div>
                     }

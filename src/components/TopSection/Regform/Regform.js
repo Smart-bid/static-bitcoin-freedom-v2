@@ -6,7 +6,6 @@ export default function Regform(props) {
     const path = props.location.pathname
 
     function updateValue(form, value, key) {
-       /* this.props.trackStartEdit();*/
         let obj = {},
             tempForm = form
         obj[key] = value
