@@ -10,7 +10,6 @@ class App extends Component {
         super(props);
 
         this.state = {
-            step: 1,
             page: 'main',
             showModal: false
         };
@@ -18,10 +17,6 @@ class App extends Component {
 
     handleHide = () => this.setState({ showModal: false });
     handleShow = () => this.setState({ showModal: true });
-
-    handleStep = (step) => {
-        this.setState({step})
-    };
 
 
     render() {
@@ -33,19 +28,13 @@ class App extends Component {
                         <TopSection {...this.props}
                                     show={this.state.showModal}
                                     handleHide={this.handleHide}
-                                    handleShow={this.handleShow}
-                                    handleStep={this.handleStep}
-                                    step={this.state.step}
-                                    lastError={this.state.responseError}/>
+                                    handleShow={this.handleShow}/>
                     } />
                     <Route path="/members" render={() =>
                         <TopSection {...this.props}
                                     show={this.state.showModal}
                                     handleHide={this.handleHide}
-                                    handleShow={this.handleShow}
-                                    handleStep={this.handleStep}
-                                    step={this.state.step}
-                                    lastError={this.state.responseError}/>
+                                    handleShow={this.handleShow}/>
                     } />
                 </Switch>
 
