@@ -97,7 +97,8 @@ export default class SecondRegform extends Component {
                                         trackStartEdit={this.props.trackStartEdit}
                                         languageManager={languageManager}
                                         errors={this.state.errors}
-                                        onChange={form => this.setState({form})}/>
+                                        onChange={form => this.setState({form})}
+                                        onFocus={() => {}}/>
 
                                 </div>
 
@@ -108,7 +109,8 @@ export default class SecondRegform extends Component {
                                         trackStartEdit={this.props.trackStartEdit}
                                         languageManager={languageManager}
                                         errors={this.state.errors}
-                                        onChange={form => this.setState({form})}/>
+                                        onChange={form => this.setState({form})}
+                                        onFocus={() => {}}/>
 
 
                                 <FormGroup style={{width: '100%'}}>
