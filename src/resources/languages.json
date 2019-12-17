@@ -235,5 +235,242 @@
       "Bitcoin Freedom System Yazılımını ÜCRETSİZ olarak Hemen İndirin"
     ],
     "modal_small_text": "Gizliliğinize saygı duyuyoruz, tüm bilgileriniz %100 güvende"
+  },
+  "tr": {
+    "title": [
+      "Son",
+      "20 saniye",
+      "içinde",
+      "Ukraine",
+      "konumlu",
+      "45",
+      "İnsan Bitcoin Freedom System'e katıldı"
+    ],
+    "second_title": [
+      "BAŞLAMAK İÇİN",
+      "AŞAĞIDAKİ FORMU DOLDURUN"
+    ],
+    "first_name": "Adınız",
+    "last_name": "Soyadınız",
+    "email": "E-posta",
+    "password": "Parola",
+    "passtest": {
+      "invalidlength": "The password must be 8 characters long.",
+      "nolowercase": "Must contain at least 1 letter.",
+      "nonumber": "Must contain at least 1 number.",
+      "nouppercase": "Must contain at least 1 capital letter."
+    },
+    "button": "hemen başlayın",
+    "first_info_title": "Hoş geldiniz! Ben Bryden Ford",
+    "first_info_description": [
+      "Bitcoin Freedom System Operasyon Başkanı.",
+      "Bitcoin Freedom System'e katıldığınız için size bizzat hoş geldiniz demek istedim.",
+      "Bitcoin Freedom System, tıpkı sizin gibi çok çalışan insanları bu yarıştan kurtarmak ve sınırsız zaman ve özgürlüğün tadını çıkarmak için hazırlandı.",
+      "Sizi, Bitcoin Freedom System'in tam üyesi yapacak olan yazılımı nasıl kullanacağınızı öğrenmek için videoyu izleyin. Patentli yazılımımız",
+      " günde 5.000$'ın üzerinde ",
+      "para kazandırabilmektedir.",
+      "Lütfen formu eksiksiz olarak, doğru şekilde doldurun, böylece üyelik alanında sohbet edebiliriz. Hemen bilgilerinizi doldurun, üyelik alanına geçiş yapalım!"
+    ],
+    "second_info_title": "Tebrikler! Katıldınız…",
+    "second_info_description": [
+      "Ben Bryden. Sadece Bitcoin Freedom System'e hoş geldiniz demek istedim. Biz de sizi bekliyorduk!",
+      "Kaydınızı tamamlamak ve tam üye olmak için, yazılıma hemen erişim sağlayacağınız forma bilgilerinizi doğru olarak giriniz.",
+      "Erişim kazandığınızda, yazılımı etkinleştirmek için videoda anlatılan talimatları uygulayın ve hemen para kazanmaya başlayın."
+    ],
+    "steps_title": "Üyeliğiniz Sadece 3 Adımda Hazır",
+    "steps_description": [
+      "Kayıt formunu doğru bilgilerinizde doldurun ve gönder butonuna tıklayın.",
+      "Hesabınızı etkinleştirmek için broker gereksinimi olan 250$ yatırın.",
+      "Yatırımı tamamladıktan sonra, önerdiğimiz broker hemen hesabınızı yönetmeye başlayacaktır."
+    ],
+    "live_score_title": "Aksiyonu İzleyin - CANLI HESAPLAR",
+    "trade_head": [
+      {
+        "img": "yusuf",
+        "name": "Yusuf Yılmaz",
+        "start": [
+          "Başlangıç: ",
+          "$300"
+        ],
+        "end": [
+          "Kar:",
+          "$34.734,00"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 121",
+        "lost": "Kayıp: 29",
+        "last": "Son: 150"
+      },
+      {
+        "img": "berat",
+        "name": "Berat Kaya",
+        "start": [
+          "Başlangıç: ",
+          "$750"
+        ],
+        "end": [
+          "Kar:",
+          "$101.965,79"
+        ],
+        "open": "Açık: 2",
+        "end_trade": "kazanılan: 89",
+        "lost": "Kayıp: 29",
+        "last": "Son: 88"
+      },
+      {
+        "img": "mustafa",
+        "name": "Mustafa Demir",
+        "start": [
+          "Başlangıç: ",
+          "$600"
+        ],
+        "end": [
+          "Kar:",
+          "$113.470,73"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 99",
+        "lost": "Kayıp: 45",
+        "last": "Son: 220"
+      },
+      {
+        "img": "zeynep",
+        "name": "Zeynep Çelik",
+        "start": [
+          "Başlangıç: ",
+          "$450"
+        ],
+        "end": [
+          "Kar:",
+          "$134.209,40"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 200",
+        "lost": "Kayıp: 50",
+        "last": "Son: 400"
+      },
+      {
+        "img": "yagmur",
+        "name": "Yağmur Yıldız",
+        "start": [
+          "Başlangıç: ",
+          "$350"
+        ],
+        "end": [
+          "Kar:",
+          "$103.271,06"
+        ],
+        "open": "Açık: 1",
+        "end_trade": "kazanılan: 101",
+        "lost": "Kayıp: 20",
+        "last": "Son: 170"
+      },
+      {
+        "img": "ela",
+        "name": "Ela Aydın",
+        "start": [
+          "Başlangıç: ",
+          "$500"
+        ],
+        "end": [
+          "Kar:",
+          "$52.156,80"
+        ],
+        "open": "Açık: 3",
+        "end_trade": "kazanılan: 121",
+        "lost": "Kayıp: 40",
+        "last": "Son: 250"
+      }
+    ],
+    "participants_title": "İşte Bitcoin Freedom System Üyelerinin paylaşmak istedikleri",
+    "participants": [
+      {
+        "img": "dalmiro",
+        "name": "Dalmiro Zayas",
+        "text": "Önceleri 2 ayda kazandığım parayı artık sadece 1 haftada kazanıyorum, delilik bu!"
+      },
+      {
+        "img": "meneo",
+        "name": "Meneo Olvera",
+        "text": "Yaklaşık 5 aydır düğün için para biriktiriyorum, ancak daha ihtiyacım olanın yarısını bile biriktiremedim. Kendi kendime \"neden çalışma dışında bir şey denemiyorum\" dedim ve artık sadece ihtiyacım olan param değil, lüks bir balayı param da var."
+      },
+      {
+        "img": "nella",
+        "name": "Nella Milani",
+        "text": "Daha önceleri MLM piramit sistemini de denemiştim, tek yaptığı banka hesabımı sömürmek oldu. Tam vazgeçecekken Bitcoin Freedom System ile tanıştım. Hayallerini kurduğum parayı artık kazanıyor olmayı nasıl açıklayayım bilemiyorum."
+      },
+      {
+        "img": "mirari",
+        "name": "Mirari Peres",
+        "text": "Kocam \"bir deneyelim, ne kaybederiz ki\" demişti, artık yeni bir arabamız var ve istediğimiz zaman tatile gidebiliyoruz."
+      }
+    ],
+    "register_benefits_tittle": [
+      "İşte Kayıt Olduğunuzda Elde Edecekleriniz",
+      "Aşağıdaki formu bilgilerinizi doğru şekilde girdiğinizde, Bitcoin Freedom System'in tam üyelerine sunulan tüm avantajlara ve kaynaklara anında erişim kazanacaksınız."
+    ],
+    "register_benefits": [
+      {
+        "img": "circle",
+        "title": "Otomatik Al-Sat Fonksiyonu",
+        "description": "Otomatik al-sat fonksiyonumuz, para kazanmanızı sağlar – üstelik bilgisayar başında olmasanız bile. Kendi al-sat işlemlerinizi mi yapmak istiyorsunuz? Manuel seçenek de var."
+      },
+      {
+        "img": "phone",
+        "title": "7/24 Destek",
+        "description": "Bitcoin Freedom System üyesi olduğunuzda, arkadaş canlısı müşteri desteği yöneticimiz, 7/24 tüm sorularınızı yanıtlayacaktır."
+      },
+      {
+        "img": "pc",
+        "title": "Üyelere Özel Bülten",
+        "description": "Sektör öngörülerine, gelirinizi arttıracak hızlı ve son derece etkin ipuçlarına özel bir erişim kazanacaksınız."
+      },
+      {
+        "img": "star",
+        "title": "VIP Üye Bölümü",
+        "description": "Diğer Bitcoin Freedom System üyeleri ile paylaşın, konuşun ve öğrenin. Özgürlüğe tıpkı sizin gibi aşık, aynı fikirlere sahip kişilerle bir araya gelebileceğiniz daha iyi bir yer olamazdı sanırım!"
+      }
+    ],
+    "question_title": "SSS",
+    "questions": [
+      {
+        "title": "Ne tür sonuçlar bekleyebilirim?",
+        "answer": "Üyelerimiz genellikle, günlük en az 5.000$ kazanmaktadır."
+      },
+      {
+        "title": "Günde yaklaşık kaç saat çalışmam gerekli?",
+        "answer": "Bitcoin Freedom System, maksimum zaman ve özgürlük vaat ediyor. Dolayısıyla üyelerimizin günde ortalama 30 dakika çalışmaları yeterlidir."
+      },
+      {
+        "title": "Kazanabileceğimiz maksimum tutar var mıdır?",
+        "answer": "Ana felsefemiz, paranın, zamanın ve özgürlüğün sınırsız olmasıdır. Bu yüzden istediğiniz kadar para kazanmakta özgürsünüz."
+      },
+      {
+        "title": "Kaç para ödeyeceğim?",
+        "answer": "Bitcoin Freedom System üyesi olduğunuzda, yazılımımızı ücretiz olarak size özel indireceksiniz. Yapmanız gereken tek şey, üye olmak üzere kaydolmak için aşağıdaki formu doldurmak."
+      },
+      {
+        "title": "Bu da MLM, Satış Ortaklığı ya da Forex gibi mi?",
+        "answer": "Sistemimiz, ne MLM, ne satış ortaklığı ne de Forex'tir. Yazılımımız, %99.8 oranında doğruluk payı bulunan yepyeni bir algoritmayla al-sat işlemlerini kazanmaktadır."
+      },
+      {
+        "title": "Ücret var mı?",
+        "answer": "Hiçbir gizli ödeme yoktur. Sürpriz olmayacak. Bir kuruş bile ödemeyeceksiniz. Sadece yukarıdaki formu doldurun ve kayıt olun."
+      }
+    ],
+    "risk": [
+      "Önemli Risk Notu: İkili Forex/CFD önemli avantajları vardır, ancak yatırılan paranın tamamını veya bir kısmının kaybedilmesi riski taşır ve bu konu özellikle yeni başlayanlar tarafından dikkate alınmalıdır. Yatırım yapmadan önce şartlar & koşullar ve feragat sayfalarını okumanızı tavsiye ederiz. Müşteriler, ikamet ettikleri ülkelerde kişisel sermaye kazançları vergi yükümlülüğünden haberdar olmalıdırlar.",
+      "ABD'de yaşayanların, ticaret için listelenmemiş ve CFTC'ye kayıtlı bir borsada işlem görmedikleri sürece veya yasal olarak muaf tutulmadıkça, 'tahmin' işlemleri olarak adlandırılsa bile, emtia opsiyonlarını alıp satmaları yasalara aykırıdır."
+    ],
+    "modal": [
+      "DURUN!",
+      "BOŞ ELLERLE AYRILMAYIN"
+    ],
+    "modal_description": [
+      "Gerçekten, günde ",
+      "5.000$ ve özgürlüğünüzü kazanma şansını ret mi edeceksiniz?",
+      "Bitcoin Freedom System Yazılımını ÜCRETSİZ olarak Hemen İndirin"
+    ],
+    "modal_small_text": "Gizliliğinize saygı duyuyoruz, tüm bilgileriniz %100 güvende"
   }
 }
