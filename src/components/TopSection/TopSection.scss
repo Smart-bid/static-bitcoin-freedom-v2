@@ -72,11 +72,8 @@
     max-width: 838px;
     margin: 45px auto;
     border: 20px solid #39375e;
-    @media (max-width: 991px) {
-      height: 407px;
-    }
     @media (max-width: 767px) {
-      height: 304px;
+      height: 418px;
     }
     @media (max-width: 500px) {
       height: auto;
