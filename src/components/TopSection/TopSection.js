@@ -25,9 +25,12 @@ export default class TopSection extends Component {
             videos: {
                 first_video,
                 second_video
-            }
+            },
+            country: ""
         }
     }
+
+
 
     render() {
         let languageManager = this.props.languageManager();
