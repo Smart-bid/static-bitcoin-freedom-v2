@@ -45,11 +45,11 @@ export default class TopSection extends Component {
 
         return (
             <div className='TopSection'>
-                {/*{(path === '/') ?
+                {(path === '/') ?
                     <Modal show={this.props.show} onHide={this.props.handleHide} dialogClassName="second-modal">
                         <ModalForm {...this.props} onHide={this.props.handleHide}/>
                     </Modal> :
-                    ''}*/}
+                    ''}
                 <header>
                     <div className="container-fluid">
                         <div className="row">
