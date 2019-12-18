@@ -16,6 +16,7 @@ import logo from './images/logo.png'
 import timeLogo from './images/timeLogoText.jpg'
 import partners from './images/securStripe.png'
 import Regform from "./Regform/Regform";
+import getCountry from "../../resources/getCountry";
 
 
 export default class TopSection extends Component {
@@ -30,6 +31,11 @@ export default class TopSection extends Component {
         }
     }
 
+    componentDidMount() {
+        const currentCountry = this.props.countryCode;
+        let country = getCountry(currentCountry);
+        this.setState({ country })
+    }
 
 
     render() {
@@ -39,11 +45,11 @@ export default class TopSection extends Component {
 
         return (
             <div className='TopSection'>
-                {(path === '/') ?
+                {/*{(path === '/') ?
                     <Modal show={this.props.show} onHide={this.props.handleHide} dialogClassName="second-modal">
                         <ModalForm {...this.props} onHide={this.props.handleHide}/>
                     </Modal> :
-                    ''}
+                    ''}*/}
                 <header>
                     <div className="container-fluid">
                         <div className="row">
@@ -79,7 +85,7 @@ export default class TopSection extends Component {
                             <div className="col-12">
                                 <div className="title">
                                     {(path === '/') ? <div className="title-block">
-                                        <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
+                                        <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{this.state.country}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
                                     </div> :
                                         <div className="title-block">
                                             <h1>{languageManager.title[0]} <span>{languageManager.title[1]}</span> {languageManager.title[2]} <span>{languageManager.title[3]}</span> {languageManager.title[4]} <span>{languageManager.title[5]}</span><br/>{languageManager.title[6]}</h1>
