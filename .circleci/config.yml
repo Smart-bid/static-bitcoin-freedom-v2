@@ -30,8 +30,6 @@ jobs:
     steps:
       - add_ssh_keys
       - run:
-          command: cd ~/.ssh && touch known_hosts
-      - run:
           command: echo '144.76.199.215 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQmCt85vFWpSVWrW2qcnLKigC3LhCWRwTiZcGLriQCB/0H9qoKdmG3OM/Bn7Lr8yAWIJjEsok4fViRKd8hTcBA=' >> ~/.ssh/known_hosts
       - run:
           name: deploy via scp
