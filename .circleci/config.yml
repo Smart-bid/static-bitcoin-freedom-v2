@@ -24,17 +24,15 @@ jobs:
       - run:
           name: build
           command: CI="false" npm run build
-  deploy:
-    working_directory: ~/demo.thebitcoinfreedom.com
-    steps:
       - run:
           name: deploy via scp
           command: |
             scp -r ~/demo.thebitcoinfreedom.com/build/* admin@144.76.199.215:~/web/demo.thebitcoinfreedom.com/public_html
+
 orbs:
   cypress: cypress-io/cypress@1
 workflows:
-  build-test-and-deploy:
+  build-and-deploy:
     jobs:
       - build:
           filters:
@@ -45,5 +43,3 @@ workflows:
           start: npm start
           wait-on: 'http://localhost:3000'
           requires: build
-      - deploy:
-          requires: cypress/run
