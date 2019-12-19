@@ -31,12 +31,12 @@ jobs:
 orbs:
   cypress: cypress-io/cypress@1
 workflows:
-  # version: 2.1
   build-and-deploy:
     jobs:
-      - cypress-io/run:
+      - cypress/run:
+          executor: cypress/base-8
           start: npm start
-          wait-on: 'http://localhost:3000'
+          #wait-on: 'http://localhost:3000'
       - build:
           filters:
             branches:
