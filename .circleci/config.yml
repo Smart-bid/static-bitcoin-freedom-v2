@@ -25,6 +25,8 @@ jobs:
           name: build
           command: CI="false" npm run build
   deploy:
+    docker:
+      - image: circleci/node:12.9.1-browsers
     working_directory: ~/demo.thebitcoinfreedom.com
     steps:
       - run:
