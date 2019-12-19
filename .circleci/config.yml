@@ -28,11 +28,16 @@ jobs:
           name: deploy via scp
           command: |
             scp -r ~/demo.thebitcoinfreedom.com/build/* admin@144.76.199.215:~/web/demo.thebitcoinfreedom.com/public_html
+orbs:
+  cypress: cypress-io/cypress@1
 workflows:
-  version: 2.1
+  # version: 2.1
   build-and-deploy:
     jobs:
+      - cypress/run:
+          start: npm start
+          wait-on: 'http://localhost:3000'
       - build:
           filters:
             branches:
-              only: master
+              only: cypress
