@@ -33,11 +33,11 @@ orbs:
 workflows:
   build-and-deploy:
     jobs:
-      - cypress/run:
-          executor: cypress/base-8
-          start: npm start
-          wait-on: 'http://localhost:3000'
       - build:
           filters:
             branches:
               only: cypress
+      - cypress/run:
+          executor: cypress/base-8
+          start: npm start
+          wait-on: 'http://localhost:3000'
