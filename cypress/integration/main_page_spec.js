@@ -1,6 +1,6 @@
 describe('Main page', function() {
   it('Visit the main page', function() {
-    cy.visit('https://demo.thebitcoinfreedom.com/?validation=3&acc=97')
+    cy.visit('http://localhost:3000/?validation=3&acc=97')
     cy.get('.first_name')
       .type('firstname')
       .should('have.value', 'firstname')
