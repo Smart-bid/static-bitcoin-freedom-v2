@@ -34,7 +34,7 @@ workflows:
   # version: 2.1
   build-and-deploy:
     jobs:
-      - cypress/run:
+      - cypress-io/run:
           start: npm start
           wait-on: 'http://localhost:3000'
       - build:
