@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:12.9.1-browsers
-    working_directory: ~/repo
+    working_directory: ~/demo.thebitcoinfreedom.com
     steps:
       - checkout
       - add_ssh_keys
@@ -27,7 +27,7 @@ jobs:
       - run:
           name: deploy via scp
           command: |
-            scp -r ~/repo/build/* admin@144.76.199.215:~/web/demo.thebitcoinfreedom.com/public_html
+            scp -r ~/demo.thebitcoinfreedom.com/build/* admin@144.76.199.215:~/web/demo.thebitcoinfreedom.com/public_html
 workflows:
   version: 2.1
   build-and-deploy:
